@@ -9,7 +9,7 @@ spring:
               predicates:
                 - Path=/user-wallet/**
               filters:
-#                - PrefixPath=/api
+                #                - PrefixPath=/api
                 - AddResponseHeader=X-Powered, Nuran Team Gateway Service
                 - Retry=20
             - id: ms-transaction-history
@@ -17,7 +17,7 @@ spring:
               predicates:
                 - Path=/transaction-history/**
               filters:
-#                - PrefixPath=/api
+                #                - PrefixPath=/api
                 - AddResponseHeader=X-Powered, Nuran Team Gateway Service
 
 
